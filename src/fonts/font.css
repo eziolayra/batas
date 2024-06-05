@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'HermesFB';
+  src: url('./hermes-fb.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HermesFBRegular';
+  src: url('./hermesfb-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HermesRegular';
+  src: url('./hermes-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  font-family: 'HermesFBRegular', sans-serif;
+  font-family: 'HermesFB', sans-serif;
+  font-family: 'HermesRegular', sans-serif;
+*/
