@@ -1,5 +1,4 @@
 import React from "react";
-import box from "../Asset/box.png";
 import "../App.css";
 
 const HomeBox = () => {

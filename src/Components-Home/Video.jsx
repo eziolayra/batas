@@ -5,14 +5,14 @@ const Video = () => {
     <div className="video-container">
       <div className="container mx-auto">
         <div className="video-description">
-          <p>
-            <b>VIDEOS</b>
+          <p className='video-head'>
+            VIDEOS
           </p>
           <p className="video-detail">
             lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum
             dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit
             amet, consectetur adipiscing elit. lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. lorem ipsum dolor sit amet.
           </p>
         </div>
         <div className="YT-videos">

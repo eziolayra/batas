@@ -10,12 +10,12 @@ const Ourclients = () => {
     <div className="client-container">
       <center>
         <div>
-          <b>OUR CLIENTS</b>
+          <p className='client'>OUR CLIENTS</p>
           <p className="client-para">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum
             dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit
             amet, consectetur adipiscing elit.lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.lorem ipsum dolor sit amet.
           </p>
         </div>
       </center>

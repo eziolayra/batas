@@ -5,11 +5,23 @@ import { AiOutlineMail } from "react-icons/ai";
 import { CiSearch } from "react-icons/ci";
 import { BsTelephoneFill } from "react-icons/bs";
 import "../fonts/font.css";
+import Home from "../Pages/Home";
+import Nothing from "../Pages/Nothing";
 
 
-const TopNav = () => {
+const Nav = () => {
   const [activeLink, setActiveLink] = useState("HOME");
-
+  const [activeTab, setActiveTab] = useState("Home");
+  const renderComponent = () => {
+    switch (activeTab) {
+      case "Home":
+        return <Home />;
+      case "Nothing":
+        return <Nothing />;
+      default:
+        return null;
+    }
+  }
   const getLinkClass = (link) => {
     return `navLink ${activeLink === link ? "active" : ""}`;
   };
@@ -125,4 +137,4 @@ const TopNav = () => {
   );
 };
 
-export default TopNav;
+export default Nav;

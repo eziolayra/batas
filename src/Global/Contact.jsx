@@ -53,10 +53,10 @@ const Contact = () => {
             <button className="contact-bottom">more</button>
           </div>
           <div>
-            <p className="details-heading">TRUCKS</p>
-            <p className="details-sub">PRO 1049 C FSD</p>
-            <p className="details-sub">PRO 1049 C FSD</p>
-            <p className="details-sub">PRO 1049 C FSD</p>
+            <p className="details-heading">TIPPER</p>
+            <p className="details-sub">PRO 1055T TIPPER</p>
+            <p className="details-sub">PRO 1080 XPT</p>
+            <p className="details-sub">PRO 1095T</p>
             <button className="contact-bottom">more</button>
           </div>
           <p className="details-heading">BUSES</p>
@@ -69,10 +69,10 @@ const Contact = () => {
 
       <div className="other-details">
         <div>
-          <p className="details-heading">TRUCKS</p>
+          <p className="details-heading">RESALE</p>
           <p className="details-sub">PRO 1049 C FSD</p>
-          <p className="details-sub">PRO 1049 C FSD</p>
-          <p className="details-sub">PRO 1049 C FSD</p>
+          <p className="details-sub">PRO 1049 C HSD</p>
+          <p className="details-sub">PRO 1049 C DSD</p>
           <button className="contact-bottom">more</button>
         </div>
         <p className="details-heading">MEDIA</p>

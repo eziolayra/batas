@@ -96,6 +96,7 @@ const Products = () => {
           <button className="product-button">VIEW ALL PRODUCTS</button>
         </div>
       </div>
+  
     </div>
   );
 };

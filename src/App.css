@@ -28,13 +28,13 @@
   position: absolute;
   inset: 0;
   content: "";
-  background: red;
+  background: #E52034;
   transform: skew(-20deg, 0deg);
   z-index: -1;
 }
 
 .navLink.active {
-  color: white;
+  color: #FFFFFF;
   z-index: 0;
 }
 
@@ -47,7 +47,7 @@
   border: none;
   outline: none;
   padding: 10px;
-  background-color: white;
+  background-color: #FFFFFF;
   margin-right: 10px;
   width: 100%;
 }
@@ -120,7 +120,7 @@
 }
 
 .nav-icon{
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 10px;
   cursor: pointer;
 }
@@ -196,7 +196,7 @@
   line-height: 26.88px;
 }
 .redText {
-  color: red;
+  color: #E52034;
 }
 
 .boxImages {
@@ -222,23 +222,11 @@
   margin-left: 60px;
   font-family: 'HermesFB', sans-serif;
 }
-
-.lines {
-  width: 90%;
-  height: 42px;
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  transform: skew(-20deg,0deg);
-}
 .container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .Box {
   display: flex;
   flex-direction: column;
@@ -248,7 +236,6 @@
   width: 270px;
   height: 300px;
 }
-
 .text {
   text-align: center;
   padding-top: 10px;
@@ -259,35 +246,55 @@
   width: 100%;
   background-color: #e8e8e9;
 }
-
 .pics {
   max-width: 100%;
   max-height: 100%;
 }
-
+.lines {
+  width: 90%;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 8px;
+}
 .feature {
-  background-color: red;
-  text-align: center;
   width: 200px;
   height: 42px;
-  color: white;
-  margin-right: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
 }
 .feature::before {
   position: absolute;
+  inset: 0;
+  content: "";
+  background: #E52034;
+  color: #FFFFFF;
   transform: skew(-20deg, 0deg);
+  z-index: -1;
 }
-
 .linkContainer {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   display: flex;
+  width: 100%;
+  height: 42px;
   gap: 30px;
   right: auto;
-  text-align: right;
+  position: relative;
   justify-content: right;
-  align-items: end;
+}
+.linkContainer::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: #f2f2f2;
+  color: #FFFFFF;
+  transform: skew(-20deg, 0deg);
+  z-index: -1;
 }
 
 .productLink {
@@ -302,7 +309,7 @@
 }
 
 .productLink:hover {
-  color: red;
+  color: #E52034;
   text-decoration: underline;
 }
 .product-button-container{
@@ -311,7 +318,7 @@
   text-align: center;
 }
 .product-button {
-  color: red;
+  color: #E52034;
   background: transparent;
   padding: 10px;
   margin-top: 20px;
@@ -324,17 +331,17 @@
   position: absolute;
   inset: 0;
   content: "";
-  border: 1px solid red;
+  border: 1px solid #E52034;
   background: transparent;
   transform: skew(-20deg, 0deg);
   z-index: -1;
 }
 .product-button:hover {
-  color: white;
+  color: #FFFFFF;
 }
 .product-button:hover::before {
   border: none;
-  background: red;
+  background: #E52034;
   padding: 10px;
 }
 .sliderContainer {
@@ -359,7 +366,7 @@
   cursor: pointer;
 }
 .dot.active {
-  background-color: red;
+  background-color: #E52034;
 }
 /*css for HomeMiddle*/
 .Rect {
@@ -391,7 +398,7 @@
 .para {
   background-color: #F72239;;
   
-  color: white;
+  color: #FFFFFF;
 }
 .par-blue {
   color: #125ea9;
@@ -417,7 +424,7 @@
 .contact {
   display: flex;
   gap: 10px;
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 5px;
   padding-left: 10px;
   font-size: 15px;
@@ -460,8 +467,8 @@
 }
 
 .map-icon {
-  background-color: red;
-  color: white;
+  background-color: #E52034;
+  color: #FFFFFF;
   padding: 10px;
   cursor: pointer;
 }
@@ -497,8 +504,8 @@
 }
 .map-button{
   width: 100%;
-  color: white;
-  background-color: red;
+  color: #FFFFFF;
+  background-color: #E52034;
   border: none;
   padding: 10px;
   font-family: 'Hermes', sans-serif;
@@ -515,103 +522,107 @@
   background-color: #f1f1f1;
   display: flex;
 }
-.news-container{}
-
-.news-button {
-  position: absolute;
-  top: 2585px;
-  left: 750px;
-  padding: 15px;
-  background: red;
-  color: white;
-  background: transparent;
-  border: 0;
-  z-index: 0;
+.news-section{
+    width: 60%;
 }
+.news-button {
+  font-family: 'Hermes', sans-serif;
+  padding: 15px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 0;
+  z-index: 2;
+  position: relative;
+  margin-top: 20px;
+  bottom: 710px;
+  left: 700px;
+}
+
 .news-button::before {
   position: absolute;
   inset: 0;
   content: "";
-  background: red;
+  background: #E52034;
   transform: skew(-20deg, 0deg);
   z-index: -1;
 }
 
 .news-button:hover {
-  color: white;
+  color: #FFFFFF;
 }
+
 .news-button:hover::before {
-  border: 1px solid red;
+  border: 1px solid #E52034;
   background: transparent;
 }
 
+
 .news {
   position: absolute;
-  top: 2936px;
-  left: 8px;
+  bottom: 0px;
   width: 800px;
+  font-family: 'HermesFBRegular', sans-serif;
 }
 
 .news-update {
   background: black;
-  color: white;
+  color: #FFFFFF;
   padding-left: 50px;
   width: 200px;
   position: relative;
   font-size: 26px;
 }
-.news-update::before{
- content: "";
- position: absolute;
- z-index: 0;
- width: 20px;
- inset: 0;
- left: 245px;
- height: 50%;
- height: auto;
- background-color: black;
 
- transform: skew(-20deg);
+.news-update::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 20px;
+  inset: 0;
+  left: 245px;
+  height: 50%;
+  height: auto;
+  background-color: black;
+  transform: skew(-20deg);
 }
+
 .news-detail {
-  background: transparent;
+  position: relative;
+  z-index: 1;
   background-color: #ffffffcc;
-  width: 900px;
   padding: 5px;
   padding-left: 50px;
   box-sizing: border-box;
-  
+  width: 910px;
 }
 
 .news-heading {
-  color: red;
+  color: #E52034;
 }
-.news-sub{
+
+.news-sub {
   font-size: 14px;
 }
+
 .news-right-arrow {
-  position: absolute;
-  top: 50%;
-  right: 10px;
   background: transparent;
   border: none;
   cursor: pointer;
-  transform: translateY(-50%);
-  color: red;
-  z-index: 1;
+  color: #E52034;
 }
 
 .event-news-pic {
-  width: 900px;
-  height: 564px;
-  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .event-details {
   padding: 20px;
   position: relative;
+  flex: 1;
 }
-.event-details::before{
+
+.event-details::before {
   position: absolute;
   content: "";
   inset: 0;
@@ -621,7 +632,6 @@
   left: 10px;
   width: 20px;
 }
-
 
 .fle {
   display: flex;
@@ -633,61 +643,64 @@
   color: #484848;
 }
 
+.event-sub-text {
+  color: #252525;
+}
+
 .event-head {
   display: flex;
-  gap: 240px;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .event-date {
   background-color: black;
-  color: white;
-  width: 120px;
-  padding: 5px;
-  transform: skew(-20deg, 0deg);
+  color: #FFFFFF;
   padding: 5px 10px;
+  transform: skew(-20deg, 0deg);
 }
 
 .event-texts {
   display: flex;
   padding-bottom: 20px;
+  font-family: 'HermesFBRegular', sans-serif;
 }
 
 .event-imgs {
   height: 81px;
   width: 165px;
   padding-left: 50px;
-  justify-content: center;
   box-sizing: border-box;
 }
 
-.event-head-text {
+.coming-event {
+  font-family: 'Hermes', sans-serif;
 }
 
 .event-button {
-  color: white;
+  font-family: 'Hermes', sans-serif;
+  color: #FFFFFF;
   border: none;
   padding: 10px;
   position: relative;
-  border: 0;
   z-index: 0;
 }
+
 .event-button::before {
-  background-color: red;
+  background-color: #E52034;
   position: absolute;
   inset: 0;
   content: "";
   transform: skew(-20deg, 0deg);
   z-index: -1;
-  background: red;
 }
 
 .event-button:hover {
-  color: red;
+  color: #E52034;
 }
+
 .event-button:hover::before {
-  color: red;
-  border: 1px solid red;
+  border: 1px solid #E52034;
   background: transparent;
 }
 
@@ -696,14 +709,16 @@
   margin-top: 100px;
   margin-bottom: 200px;
 }
-
+.client{
+  font-family: 'HermesFB', sans-serif;
+  font-size: 24px;
+}
 .client-para {
   justify-content: center;
   text-align: center;
-  margin-left: 500px;
-  margin-right: 500px;
-  font-weight: 400;
-  font-size: 24;
+  align-items: center;
+  margin: 0px 340px;
+  font-family: 'HermesFBRegular', sans-serif;
 }
 
 .client-img {
@@ -715,7 +730,7 @@
 }
 
 .client-link:hover {
-  transform: translateY(-1px);;
+  transform: translateY(-10px);;
 }
 
 /*css for testimonials*/
@@ -724,8 +739,11 @@
 }
 
 .testimonials-detail {
-  text-align: center;
+  display: flex;
   margin-bottom: 20px;
+  align-items: center;
+  width: 620px;
+  background: #44444426;
 }
 .testimonials-detail::after{
   position: absolute;
@@ -733,19 +751,19 @@
   content: "";
   z-index: 0;
   width: 30px;
-  height: 40px;
+  height: 100px;
   background: rgb(255, 255, 255);
   transform: skew(-20deg);
-  left: 500px;
+  left: 600px;
 }
 
 .test-head {
-  padding: 10px;
-  padding-left: 100px;
-  background: #44444426;
-  width: 400px;
+  padding: 2px;
+  padding-left: 110px;
   position: relative;
   display: block;
+  font-size: 24px;
+  font-family: 'HermesFB', sans-serif;
 }
 
 .test-head::before,
@@ -755,16 +773,18 @@
   content: "";
   transform: skew(-20deg, 0deg);
   width: 30px;
+  height: 100px;
+  top: -25px;
   z-index: 0;
   background: #fff;
 }
 
 .test-head::before {
-  left: 450px;
+  left: 530px;
 }
 
 .test-head::after {
-  left: 410px;
+  left: 490px;
 }
 
 .test-detail {
@@ -778,11 +798,16 @@
 .w-50 {
   width: 50%;
 }
-
+.test-name{
+  font-family: 'HermesFB', sans-serif;
+}
+.test-title,
+.test-text{
+  font-family: 'HermesFBRegular', sans-serif;
+}
 .test-img {
   transform: translateY(-70px);
 }
-
 .next-arrow {
   position: absolute;
   top: 50%;
@@ -805,25 +830,64 @@
 /*css for emi-calculator*/
 .emi-container {
   background-color: #125ea9;
-  color: white;
+  color: #FFFFFF;
 }
 .emi {
   text-align: center;
   padding-top: 10px;
 }
-.emi-form input {
-  border-bottom: 1px solid white;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  margin-right: 90px;
-  padding: 10px;
-  background-color: #125ea9;
-  color: white;
+.emi-heading{
+  font-family: 'HermesFB', sans-serif;
+  font-size: 24px;
 }
-.emi-form button {
-  color: white;
+.emi-sub{
+  font-size: 14px;
+  color: #F0F0F080;
+  margin-bottom: 40px;
+  font-family: 'HermesFBRegular', sans-serif;
+}
+.emi-forms{
+  padding: 10px;
+  background-color: #125EA9;
+  font-family: 'HermesFBRegular', sans-serif;
+}
+.emi-forms label{
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
+}
+.emi-forms input{
+  color: #ffff;
+  appearance: none;
+  background-color: #125EA9;
+  height: 30px;
+  width:15%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 -1px 0 #ffff;
+  transition: all 0.3s ease;
+  margin-right: 50px;
+}
+.emi-forms span{
+  color: #ffff;
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  transition: all 0.3s ease;
+  transform-origin: 0 0;
+  transform: translate(0, 0);
+  transition: all 0.3s ease;
+}
+.emi-forms input:focus + span{
+  transform: translate(0, -30px) ;
+}
+.emi-forms input:not(:placeholder-shown) + span{
+  transform: translate(0, -30px) ;
+}
+.emi-forms button {
+  color: #F0F0F0;
   background: transparent;
   padding: 10px;
   border: none;
@@ -832,30 +896,27 @@
   z-index: 0;
 }
 
-.emi-form button::before {
+.emi-forms button::before {
   position: absolute;
   inset: 0;
   content: "";
-  border: 1px solid white;
+  border: 1px solid #F0F0F0;
   background: transparent;
   transform: skew(-20deg, 0deg);
   z-index: -1;
 }
-.emi-form button:hover {
+.emi-forms button:hover {
   color: #125ea9;
 }
-.emi-form button:hover::before {
+.emi-forms button:hover::before {
   border: none;
-  background: white;
-}
-
-.emi-form input::placeholder {
-  color: white;
+  background: #F0F0F0;
 }
 
 table thead th {
-  color: blue;
+  color: #1A66B2;
   background-color: #dfefff;
+
 }
 
 table tbody tr:nth-child(odd) {
@@ -872,6 +933,8 @@ table {
   border: 0;
   width: 100%;
   border-collapse: collapse;
+  font-family: "HermesFBRegular", sans-serif;
+  font-weight: bold;
 }
 th,
 td {
@@ -885,17 +948,22 @@ td {
 /*css for video*/
 .video-container {
   margin: 100px 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .video-description {
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 0px 300px;
+  padding: 0px 200px;
   margin-bottom: 30px;
+}
+.video-head{
+  font-family: 'HermesFB', sans-serif;
+  font-size: 24px;
 }
 .video-detail{
   font-size: 16px;
+  font-family: 'HermesFBRegular', sans-serif;
 }
 .YT-videos {
   display: flex;
@@ -918,7 +986,7 @@ td {
   margin-top: 10px;
   background-color: #f2f2f2;
   align-items: center;
-  overflow: hidden;
+  overflow: clip;
   position: relative;
 }
 
@@ -959,7 +1027,7 @@ td {
 }
 
 .gallery-button {
-  color: red;
+  color: #E52034;
   background: transparent;
   padding: 10px;
   margin-top: 20px;
@@ -973,19 +1041,19 @@ td {
   position: absolute;
   inset: 0;
   content: "";
-  border: 1px solid red;
+  border: 1px solid #E52034;
   background: #f2f2f2;
   transform: skew(-20deg, 0deg);
   z-index: -1;
 }
 
 .gallery-button:hover {
-  color: white;
+  color: #FFFFFF;
 }
 
 .gallery-button:hover::before {
   border: none;
-  background: red;
+  background: #E52034;
   padding: 10px;
 }
 
@@ -994,7 +1062,7 @@ td {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #FFFFFF;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -1024,10 +1092,16 @@ td {
 .FAQs {
   width: 45%;
   margin-right: 20px;
+  font-family: 'HermesFB', sans-serif;
 }
-
+.faq-head{
+  font-size: 24px;
+  font-family: 'HermesFB', sans-serif;
+}
 .FAQ-feeds {
   border-bottom: 1px solid #0000001a;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .FAQ-input {
   border-bottom: 1px solid #0000001a;
@@ -1036,14 +1110,14 @@ td {
 
 .FAQ-input input {
   border: none;
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 5px;
   width: 85%;
   outline: 0;
 }
 
 .all-faq {
-  color: red;
+  color: #E52034;
   background: transparent;
   padding: 10px;
   margin-top: 20px;
@@ -1057,24 +1131,24 @@ td {
   position: absolute;
   inset: 0;
   content: "";
-  border: 1px solid red;
-  background: white;
+  border: 1px solid #E52034;
+  background: #FFFFFF;
   transform: skew(-20deg, 0deg);
   z-index: -1;
 }
 
 .all-faq:hover {
-  color: white;
+  color: #FFFFFF;
 }
 .all-faq:hover::before {
   border: none;
-  background: red;
+  background: #E52034;
   padding: 10px;
 }
 
 .input-button {
   background: #125ea9;
-  color: white;
+  color: #FFFFFF;
   padding: 5px;
   border: none;
   padding-left: 15px;
@@ -1082,7 +1156,7 @@ td {
 }
 
 .input-button:hover {
-  background: white;
+  background: #FFFFFF;
   color: #125ea9;
   border: 1px solid #125ea9;
 }
@@ -1091,9 +1165,10 @@ td {
   background-color: #f2f2f2;
   width: 50%;
   height: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  font-family: "HermesFBRegular", sans-serif;
 }
 
 .feedback-form input, textarea {
@@ -1124,21 +1199,34 @@ td {
   height: 80px;
 }
 .consent label{
-  font-size: small;
+  font-size: 14px;
 }
-
 .feedback-form-button {
-  color: white;
-  background-color: red;
-  border: none;
+  color: #FFFFFF;
+  background: transparent;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 0;
+  z-index: 0;
 }
-
+.feedback-form-button::before{
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: #E52034;
+  transform: skew(-20deg, 0deg);
+  z-index: -1;
+}
 .feedback-form-button:hover {
-  color: red;
-  background-color: #f2f2f2;
-  border: 1px solid red;
+  color: #E52034;
+}
+.feedback-form-button:hover::before {
+  border: none;
+  background: transparent;
+  border: 1px solid #E52034;
+  padding: 10px;
 }
 
 .consent {
@@ -1155,16 +1243,13 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 26px;
+  font-size: 16px;
+  line-height: 19.6px;
 }
 .faq-toggle {
   margin-left: 10px;
   cursor: pointer;
 }
-.faq-answer {
-  font-size: 20px;
-}
-
 /*Contact css*/
 .contact-container {
   background-color: #125ea9;
@@ -1173,6 +1258,7 @@ td {
   justify-content: space-evenly;
   gap: 20px;
   color: #F0F0F0;
+  font-family: "HermesFBRegular", sans-serif;
 }
 .open-time {
   color: #4eb747;
@@ -1182,7 +1268,8 @@ td {
   padding-top: 90px;
 }
 .contact-icon {
-  color: white;
+  color: #F0F0F0
+;
   background: #4eb747;
   border-radius: 100px;
   padding: 10px;
@@ -1199,7 +1286,7 @@ td {
   text-decoration: underline #4eb747;
 }
 .details-sub{
-  font-size: 15px;
+  color: #F0F0F0BF;
 }
 .contact-affiliated{
   margin-top: 50px;
@@ -1207,7 +1294,8 @@ td {
 
 .contact-bottom {
   padding: 10px 60px;
-  color: white;
+  color: #F0F0F0
+;
   position: relative;
   border: 0;
   background: transparent;
@@ -1219,7 +1307,7 @@ td {
   content: "";
   transform: skew(-20deg, 0deg);
   z-index: -1;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   background: #125ea9;
 }
 .contact-bottom:hover {
@@ -1227,7 +1315,7 @@ td {
 }
 .contact-bottom:hover::before {
   border: none;
-  background: white;
+  background: #FFFFFF;
   padding: 10px;
 }
 
@@ -1236,7 +1324,7 @@ td {
   padding-right: 20px;
 }
 .contact-box {
-  background-color: white;
+  background-color: #FFFFFF;
   margin-bottom: 10px;
   padding: 1px 20px;
   display: flex;
@@ -1288,7 +1376,7 @@ td {
 .middle {
   background-color: #4eb747;
   padding: 10px;
-  color: white;
+  color: #FFFFFF;
 }
 .end {
   margin-right: 20px;
@@ -1300,4 +1388,91 @@ td {
 }
 .developer-icon {
   margin-right: 10px;
+}
+
+/*css of Icons*/
+.navigation-menu {
+  font-family: 'HermesFB', sans-serif;
+  right: 10px;
+  bottom: 200px;
+  position: fixed;
+  display: flex;
+  cursor: pointer;
+  height: 187px;
+  z-index: 10;
+}
+.socials {
+  background-color: #1C1C1C;
+  position: relative;
+}
+.socials-hovers {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 200px;
+  background-color: #363636;
+  height: 187px;
+  margin-left: 10px;
+}
+.socials .socials-hovers .socials-hover-red {
+  color: #E52034;
+}
+.socials-hover ,
+.socials-hover-red {
+  color: #FFFFFF;
+  padding: 5.4px;
+  border-bottom: 1px solid #FFFFFF33;
+}
+.socials:hover .socials-hovers {
+  display: block;
+}
+.socials-icons {
+  margin-left: 10px;
+}
+.social-facebook,
+.social-X,
+.social-whatsapp {
+  padding-top: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 100px;
+  margin-right: 10px;
+  background-color: #FFFFFF;
+}
+.social-facebook {
+  color: #125EA9;
+}
+.social-whatsapp {
+  color: #4eb747;
+}
+.social-icon {
+  color: #E52034;
+  padding: 5px 10px;
+  border-bottom: 1px solid #FFFFFF33;
+}
+
+
+
+
+
+/*Media response*/
+
+@media (max-width: 767px) {
+  .skew-double::before,
+  .skew-double::after {
+    width: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .skew-double::before,
+  .skew-double::after {
+    width: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .skew-double::before,
+  .skew-double::after {
+    width: 40px;
+  }
 }

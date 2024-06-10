@@ -4,25 +4,29 @@ import "../App.css";
 const FAQ = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Answer content goes here.",
       isOpen: false,
     },
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Answer content goes here.",
       isOpen: false,
     },
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Answer content goes here.",
       isOpen: false,
     },
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      question:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Answer content goes here.",
       isOpen: false,
@@ -41,7 +45,7 @@ const FAQ = () => {
   return (
     <div className="FAQ-container">
       <div className="FAQs">
-        <h2>FAQs</h2>
+        <p className="faq-head">FAQs</p>
         {faqs.map((faq, index) => (
           <div className="FAQ-feeds" key={index}>
             <div className="faq-question" onClick={() => toggleFaq(index)}>
@@ -52,9 +56,7 @@ const FAQ = () => {
           </div>
         ))}
         <div className="ask-question">
-          <p>
-            <b>FEEL FREE TO ASK YOUR QUESTION</b>
-          </p>
+          <p>FEEL FREE TO ASK YOUR QUESTION</p>
           <div className="FAQ-input">
             <input type="text" placeholder="TYPE HERE" />
             <button className="input-button" type="submit">
@@ -65,7 +67,7 @@ const FAQ = () => {
         <button className="all-faq">VIEW ALL FAQ</button>
       </div>
       <div className="feedback-form">
-        <h2>Feedback Form</h2>
+        <p className="faq-head">Feedback Form</p>
         <form>
           <div className="form-group">
             <input type="text" placeholder="FULL NAME" />

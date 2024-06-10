@@ -1,14 +1,9 @@
 import React from "react";
-import {
-  FaWhatsapp,
-  FaFacebook,
-  FaYoutube,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import {FaWhatsapp, FaFacebook, FaYoutube, FaLinkedinIn} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 
-const Developed = () => {
+const Footer = () => {
   return (
     <div className="developed-container">
       <div className="start">
@@ -44,4 +39,4 @@ const Developed = () => {
   );
 };
 
-export default Developed;
+export default Footer;
